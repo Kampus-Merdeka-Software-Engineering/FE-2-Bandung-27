@@ -1,0 +1,478 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow: hidden;
+    border-radius: 20px; /*Mengatur sudut lengkungan pada pinggir gambar */
+}
+
+.slider img {
+    width: 950px; /* Atur ukuran gambar menjadi 50% dari lebar jendela */
+    height: 400px; /* Atur ukuran gambar menjadi 50% dari tinggi jendela */
+}
+
+
+.active a {
+    background-color: #47dfd7bb;
+    border-radius: 15px;
+    color: red;
+}
+
+body {
+    background: rgb(221,218,218);
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+    border: 0;
+    background: #dedede;
+    height: 2px;
+}
+
+header img {
+    height: 100%;
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+header {
+	text-align: center;
+	color: #232323;
+}
+
+header .judul {
+    font-family: 'DM Serif Display'; /* Ganti 'Nama-Font' dengan nama font dari Google Fonts */
+    font-size: 75px; /* Atur ukuran font sesuai kebutuhan */
+    color: #FF5733; /* Ganti warna font sesuai keinginan */
+    text-transform: uppercase; /* Membuat teks menjadi huruf besar */
+    letter-spacing: 4px; /* Mengatur jarak antar huruf */
+    margin : 0;
+}
+
+
+header .deskripsi {
+    font-family: 'Sarabun', sans-serif; /* Pilih font yang sesuai */
+    font-size: 25px; /* Ukuran teks deskripsi */
+    letter-spacing: 2px; /* Mengatur jarak antar huruf */
+    color: #000000; /* Warna teks deskripsi */
+    margin : 0;
+}
+
+.wrap {
+    width: 950px;
+    margin: 25px auto;
+}
+nav.menu ul{
+    overflow: hidden;
+    color: #fff;
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 650px;
+    margin: 0 0 0;
+    background: rgba(2, 120, 150);
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
+    -moz-box-shadow: 1px 1px 1px 0px rgb(204, 204, 204, 0.55);
+    box-shadow: 5px 5px 5px 0px rbga(148,137,137,0.55);
+    border-radius: 15px;
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+
+nav.menu ul li {
+    margin: 15px;
+    float: left;
+    flex: 1;
+}
+
+nav.menu ul a {
+    padding: 10px;
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.active a{
+    color: red;
+}
+
+nav.menu ul a:hover {
+    text-decoration: underline;
+    border-radius: 15px;
+    background: #ffffff;
+    /*margin: 0.02px;*/
+    color: rgb(144, 216, 219);
+}
+
+nav.menu ul a:active {
+    color: red;
+}
+
+.sidebar {
+    float: right;
+    width: 275px;
+}
+
+
+.widget-pict {
+    border-radius: 8px;
+}
+
+.widget {
+    text-align: justify;
+}
+
+.sidebar .widget {
+    padding: 25px;
+    margin: 0 0 25px;
+    background: #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5s ease;
+    border-radius: 15px;
+    border: 1px solid rgba(10, 128. 238. 0.55);
+}
+
+.sidebar .widget:hover{
+    border-bottom: 4px solid #3498db;
+    box-shadow: 5px 5px 5px 0px rgb(139, 139, 137);
+}
+
+.sidebar .widget h2 {
+    padding: 0;
+    margin: 0 0 15px;
+    color: #3498db;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.sidebar .widget p {
+    font-size: 14px;
+}
+
+.sidebar .widget p:last-child {
+    margin: 0;
+}
+
+.blog {
+    float: left;
+}
+
+.widget .faq-selengkapnya {
+    color: #000;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.faq-selengkapnya:hover{
+    margin-left: 10px;
+}
+
+.conteudo {
+    width: 600px;
+    padding: 25px;
+    margin: 25px auto;
+    background: #fff;
+    transition: all 0.5s ease;
+    border: 1px solid #dedede;
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+    box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
+    border-radius: 15px 25px;
+    background-color: rgb(240, 240, 240);
+    text-align: justify;
+}
+
+.conteudo:hover {
+    border-bottom: 4px solid rgb(52, 194, 219);
+    box-shadow: 5px 5px 5px 0px rgb(139, 139, 137);
+}
+
+.conteudo img {
+    min-width: 600px;
+    margin: 0 0 25px -25px;
+    max-width: 600px;
+}
+
+.conteudo h1 {
+    padding: 0;
+    margin: 0 0 15px;
+    font-weight : normal;
+    color: #666;
+    font-family: Georgia;
+}
+
+.conteudo p:last-child {
+    margin: 0;
+}
+
+.conteudo .conteudo-lendo {
+    color: #000;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.conteudo .continue-lendo:hover {
+    margin-left: 10px;
+}
+
+.post-info {
+    float: right;
+    font-size: 12px;
+    margin: -10px 0 15px;
+    text-transform: uppercase;
+}
+
+.footer {
+    color: black; /* Warna teks footer */
+    text-align: center; /* Pusatkan teks dalam footer */
+    padding: -5px; /* Ruang bawah dan atas dalam footer */
+}
+
+
+.bottom-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Gaya untuk judul FAQ dan teks penjelasan */
+.title {
+    text-align: center; /* Pusatkan teks secara horizontal */
+    font-size: 18px; /* Atur ukuran teks sesuai keinginan Anda */
+    color: white; /* Warna teks judul */
+    background-color: #1abf9f;
+
+.title span {
+    font-size: 5px; /* Ukuran teks untuk teks penjelasan */
+    background-color: rgb(165, 235, 221);
+}
+}
+
+
+/* Gaya untuk pertanyaan */
+.accordion-item a {
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Gaya untuk jawaban */
+.accordion-item .content p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Latar belakang pertanyaan */
+.accordion-item {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Efek hover pada pertanyaan */
+.accordion-item a:hover {
+    color: #007bff; /* Ganti warna saat hover */
+}
+
+/* Latar belakang saat aktif (pertanyaan terbuka) */
+.accordion-item.active {
+    background-color: #eaeaea;
+}
+
+/* Ikona panah untuk menandai pertanyaan terbuka */
+.accordion-item.active a::after {
+    content: "▲";
+}
+
+/* Tampilan jawaban ketika terbuka */
+.accordion-item.active .content {
+    display: block;
+}
+
+
+
+@media screen and (max-width: 960px) {
+    .header {
+        position: inherit;
+    }
+    .wrap {
+        width: 90%;
+        margin: 25px auto;
+    }
+    .sidebar {
+        width: 100%;
+        margin: 25px 0 0;
+        float: right;
+    }
+    .sidebar .widget {
+        padding: 5%;
+    }
+    nav.menu ul {
+        width: 100%;
+    }
+    nav.menu ul {
+        float: inherit;
+    }
+
+    nav.menu ul li {
+        float: inherit;
+        margin: 0;
+    }
+
+    nav.menu ul a {
+        padding: 15px;
+        font-size: 16px;
+        border-top: 1px solid #1abf9f;
+        border-bottom: 1px solid #16a085;
+    }
+    
+    .blog {
+        width: 90%;
+    }
+    
+    .conteudo {
+        float: inherit;
+        margin: 0 auto 25px;
+        width: 101%;
+        border: 1px solid #dedede;
+        padding: 5%;
+        background: #fff;
+    }
+
+    .conteudo img {
+        max-width: 110%;
+        margin: 0 0 25px -5%;
+        min-width: 110%;
+    }
+
+    .conteudo .continue-lendo:hover {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 460px) {
+
+    nav.menu ul a {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    .post-info {
+        display: none;
+    }
+
+    .conteudo {
+        margin: 25px auto;
+    }
+
+    .conteudo img {
+        margin: -5% 0 25px -5%;
+    }
+header img {
+    margin-top: 5px;
+    border-radius: 8px;
+}
+
+header {
+	text-align: center;
+	color: #232323;
+}
+
+header .judul {
+	font-size: 25pt;
+}
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+  /* Style the container/contact section */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+  /* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  
