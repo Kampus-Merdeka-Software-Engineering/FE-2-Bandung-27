@@ -9,6 +9,10 @@
     border-radius: 20px; /*Mengatur sudut lengkungan pada pinggir gambar */
 }
 
+.jam {
+    width: fit-content;
+}
+
 .slider img {
     width: 950px; /* Atur ukuran gambar menjadi 50% dari lebar jendela */
     height: 400px; /* Atur ukuran gambar menjadi 50% dari tinggi jendela */
