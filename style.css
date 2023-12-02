@@ -9,9 +9,6 @@
     border-radius: 20px; /*Mengatur sudut lengkungan pada pinggir gambar */
 }
 
-.jam {
-    width: fit-content;
-}
 
 .slider img {
     width: 950px; /* Atur ukuran gambar menjadi 50% dari lebar jendela */
@@ -478,5 +475,105 @@ header .judul {
       display: block;
     }
   }
-  
-  
+
+  /* Style Container */
+.containersaran {
+    align-items: left;
+    width: 68%;
+    margin: 0px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Centered Text in Container */
+.containersaran h2 {
+    text-align: center;
+    color: #28ba6e;
+}
+
+/* Style Form */
+.saran form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.saran label {
+    margin-top: 10px;
+    color: #555;
+}
+
+.saran input[type="text"],
+.saran select,
+.saran textarea {
+    width: 100%;
+    font-size: larger;
+    padding: 8px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.saran input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.saran input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style Image */
+.rowsaran .under img {
+    width: 120px;
+    transition: transform 0.5s ease;
+}
+
+.rowsaran .under:hover img {
+    width: 1800px;
+    transform: scale(1.2);
+}
+
+/* Style Row */
+.rowsaran {
+    margin-top: 20px;
+    display: flex;
+    justify-content: left;
+    width: 300%;
+}
+
+.star-rating {
+    display: inline-block;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    float: right;
+    justify-content: right; 
+    cursor: pointer;
+    color: #777;
+    margin-right: 10px; /* Menambahkan margin agar bintangnya tidak rapat */
+    margin-bottom: 15px;
+}
+
+.star-rating label:before {
+    content: '★';
+    font-size: 45px;
+}
+
+.star-rating input:checked ~ label {
+    color: #e44d26;
+}

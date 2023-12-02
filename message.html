@@ -24,14 +24,14 @@
                 <li>
                     <a href="news.html">News</a>
                 </li>
-                <li class="active">
-                    <a href="message.html">Message</a>
-                </li>
                 <li>
                     <a href="our-team.html">Team</a>
                 </li>
                 <li>
                     <a href="faq.html">FAQ</a>
+                </li>
+                <li class="active">
+                    <a href="message.html">Message</a>
                 </li>
             </ul>
         </nav>
@@ -69,29 +69,44 @@
         <a href = "https://instagram.com/search.news" target="_blank" class="faq-selengkapnya">Free Access →</a>
     </div>
 </aside>
-<div class="container">
+<div class="containersaran">
     <div style="text-align:center">
-      <h2>Reader Suggestions Section for Search News:</h2>
+      <h2>Suggestions Section for Search News:</h2>
       <p> </p>
     </div>
     
-      <div class="column">
+      <div class="saran">
         <form action="/action_page.php">
           <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <input type="text" id="fname" name="firstname" placeholder="Your name...">
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           <label for="country">Country</label>
           <select id="country" name="country">
             <option value="Indonesia">Indonesia</option>
+            <option value="Foreign">Foreign</option>
             
           </select>
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <label for="rating">Rating</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5">
+                <label for="star5"></label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4"></label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3"></label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2"></label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1"></label>
+            </div>
+
           <input type="submit" value="Submit">
         </form>
       </div>
-      <div class="row">
+      <div class="rowsaran">
         <div class="under column">
           <img src="slide4.png" style="width:100%">
         </div>
