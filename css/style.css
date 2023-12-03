@@ -182,7 +182,7 @@ nav.menu ul a:active {
 .conteudo {
     width: 650px;
     padding: 25px;
-    margin: 25px auto;
+    margin: 10px auto;
     background: #fff;
     transition: all 0.5s ease;
     border: 1px solid #dedede;
@@ -577,4 +577,36 @@ header .judul {
 
 .star-rating input:checked ~ label {
     color: #e44d26;
+}
+
+/* Styling for the search form */
+.search-form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Styling for the search input */
+#searchInput {
+    padding: 10px;
+    width: 400px;
+    border: 1px solid #ddd; /* Add a border for a clean look */
+    border-radius: 5px; /* Add rounded corners */
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+/* Style the search button */
+#searchForm button {
+    padding: 10px 15px;
+    background-color: #3498db; /* Set a background color */
+    color: #fff; /* Set text color to white */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition on hover */
+}
+
+/* Change the button color on hover */
+#searchForm button:hover {
+    background-color: #2980b9;
 }
