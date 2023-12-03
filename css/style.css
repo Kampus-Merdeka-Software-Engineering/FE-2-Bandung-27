@@ -18,7 +18,7 @@
 
 .active a {
     background-color: #47dfd7bb;
-    border-radius: 15px;
+    border-radius: 5px;
     color: red;
 }
 
@@ -65,7 +65,7 @@ header .deskripsi {
 
 .wrap {
     width: 950px;
-    margin: 25px auto;
+    margin: 20px auto;
 }
 nav.menu ul{
     overflow: hidden;
@@ -94,8 +94,8 @@ nav.menu ul li {
 nav.menu ul a {
     padding: 10px;
     display: block;
-    font-weight: 600;
-    font-size: 16px;
+    font-weight: 700;
+    font-size: 15px;
     color: #fff;
     text-transform: uppercase;
     transition: all 0.5s ease;
@@ -180,7 +180,7 @@ nav.menu ul a:active {
 }
 
 .conteudo {
-    width: 600px;
+    width: 650px;
     padding: 25px;
     margin: 25px auto;
     background: #fff;
@@ -200,7 +200,7 @@ nav.menu ul a:active {
 }
 
 .conteudo img {
-    min-width: 600px;
+    min-width: 650px;
     margin: 0 0 25px -25px;
     max-width: 600px;
 }
@@ -535,21 +535,22 @@ header .judul {
 
 /* Style Image */
 .rowsaran .under img {
-    width: 120px;
+    width: 100%;
     transition: transform 0.5s ease;
 }
 
 .rowsaran .under:hover img {
-    width: 1800px;
+    width: 100%;
     transform: scale(1.2);
 }
 
 /* Style Row */
 .rowsaran {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
-    justify-content: left;
-    width: 300%;
+    flex-direction: column;
+    width: 100px;
+    height: 300px
 }
 
 .star-rating {
@@ -565,13 +566,13 @@ header .judul {
     justify-content: right; 
     cursor: pointer;
     color: #777;
-    margin-right: 10px; /* Menambahkan margin agar bintangnya tidak rapat */
-    margin-bottom: 15px;
+    margin-right: 5px; /* Menambahkan margin agar bintangnya tidak rapat */
+    margin-bottom: 10px;
 }
 
 .star-rating label:before {
     content: '★';
-    font-size: 45px;
+    font-size: 55px;
 }
 
 .star-rating input:checked ~ label {
