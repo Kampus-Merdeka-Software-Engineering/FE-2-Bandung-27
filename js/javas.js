@@ -13,26 +13,6 @@ function showSlides() {
     setTimeout(showSlides, 3000); // Ganti gambar setiap 3 detik 
 }
 
-// Example: Display an alert when the page loads
-window.onload = function () {
-    alert('Welcome to SearchNews.com!');
-  };
-
-  // Example: Toggle a class on the menu items when clicked
-  document.addEventListener('DOMContentLoaded', function () {
-    const menuItems = document.querySelectorAll('.menu ul li');
-
-    menuItems.forEach(function (menuItem) {
-      menuItem.addEventListener('click', function () {
-        menuItems.forEach(function (item) {
-          item.classList.remove('active');
-        });
-
-        this.classList.add('active');
-      });
-    });
-  });
-
   // Add this to your js file
   document.addEventListener("DOMContentLoaded", function () {
     const searchForm = document.getElementById("searchForm");
