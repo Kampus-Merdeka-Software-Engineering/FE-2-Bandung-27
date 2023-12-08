@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Endpoint API untuk pengiriman data
         // const apiUrl = 'https://example.com/api/feedback'; // Ganti dengan URL endpoint yang sesuai
-        const apiUrl = 'https://long-gold-sea-lion-coat.cyclic.app/api//feedback';
+        const apiUrl = 'https://long-gold-sea-lion-coat.cyclic.app/api/feedback';
         
         // Konfigurasi pengiriman data menggunakan fetch
         fetch(apiUrl, {
