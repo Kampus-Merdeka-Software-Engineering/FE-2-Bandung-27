@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const searchTerm = document.getElementById("searchInput").value.trim().toLowerCase();
         let foundResults = false;
     // Simulasi API call (contoh dengan fetch)
-    fetch(`https://api.example.com/news?search=${searchTerm}`) // Ganti URL dengan URL sesuai API yang ingin kamu gunakan
+    fetch(`https://be-2-bandung-27-production.up.railway.app/news/${searchTerm}`) // Ganti URL dengan URL sesuai API yang ingin kamu gunakan
     .then(response => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
@@ -48,5 +48,55 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 }
 });
+
+
+function templateNews (item) {
+    return` <div class="conteudo">
+    <div class="post-info">
+        Di Posting Oleh <b>${item.created_by}</b>
+    </div>
+<img src=${item.image_url}>
+<h1> ${item.judul} </h1>
+<hr>
+<p>${item.deskripsi}</p>
+<a href=${item.link_berita} target="_blank" title=${item.judul} rel="bookmark">In Full →</a>
+</div>`
+} 
+
+function templateInfo (item){
+    return `<div class="widget">
+    <div>
+        <img class="widget-pict" src=${item.image_url} alt="pict" width="100%">
+    </div>
+    
+    <h2>Info</h2>
+    <p>${item.judul}</p>
+    <a href=${item.link_berita} target="_blank">In Full →</a>
+</div>`
+}
+
+function getAllNews () {
+fetch('https://be-2-bandung-27-production.up.railway.app/news')
+.then(item=>item.json())
+.then(data=>{
+const containerNews=document.getElementById("container-news")
+const containerInfo=document.getElementById("container-info")
+const newsFilter=data.filter(item=>item.news_type===1)
+const infoFilter=data.filter(item=>item.news_type===2)
+let infoContent=""
+let content=""
+newsFilter.map(item=>{
+    content+=templateNews(item)
+})
+infoFilter.map(item=>{
+    infoContent+=templateInfo(item)
+})
+containerInfo.innerHTML=infoContent
+containerNews.innerHTML=content
+})
+}
+getAllNews()
+
+
 
        

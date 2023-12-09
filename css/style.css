@@ -64,8 +64,15 @@ header .deskripsi {
 }
 
 .wrap {
+    display: flex;
+    flex-direction: column;
     width: 950px;
     margin: 20px auto;
+}
+.container-pages{
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 12px;
 }
 nav.menu ul{
     overflow: hidden;
@@ -73,7 +80,7 @@ nav.menu ul{
     list-style: none;
     float: left;
     padding: 0px;
-    width: 650px;
+    width: 100%;
     margin: 0 0 0;
     background: rgba(2, 120, 150);
     -webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
@@ -479,7 +486,7 @@ header .judul {
   /* Style Container */
 .containersaran {
     align-items: left;
-    width: 68%;
+    width: 100%;
     margin: 0px;
     padding: 20px;
     background-color: #f2f2f2;
@@ -582,6 +589,7 @@ header .judul {
 /* Styling for the search form */
 .search-form {
     margin-top: 20px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
