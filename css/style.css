@@ -17,7 +17,7 @@
 
 
 .active a {
-    background-color: #47dfd7bb;
+    background-color: #5275d6;
     border-radius: 5px;
     color: red;
 }
@@ -82,7 +82,7 @@ nav.menu ul{
     padding: 0px;
     width: 100%;
     margin: 0 0 0;
-    background: rgba(2, 120, 150);
+    background: #2748a1;
     -webkit-box-shadow: 1px 1px 1px 0px rgba(204, 204, 204, 0.55);
     -moz-box-shadow: 1px 1px 1px 0px rgb(204, 204, 204, 0.55);
     box-shadow: 5px 5px 5px 0px rbga(148,137,137,0.55);
@@ -119,7 +119,7 @@ nav.menu ul a:hover {
     border-radius: 15px;
     background: #ffffff;
     /*margin: 0.02px;*/
-    color: rgb(144, 216, 219);
+    color: #5275d6;
 }
 
 nav.menu ul a:active {
@@ -151,14 +151,14 @@ nav.menu ul a:active {
 }
 
 .sidebar .widget:hover{
-    border-bottom: 4px solid #3498db;
+    border-bottom: 4px solid #5275d6;
     box-shadow: 5px 5px 5px 0px rgb(139, 139, 137);
 }
 
 .sidebar .widget h2 {
     padding: 0;
     margin: 0 0 15px;
-    color: #3498db;
+    color: #5275d6;
     font-size: 18px;
     font-weight: 800;
     text-transform: uppercase;
@@ -202,7 +202,7 @@ nav.menu ul a:active {
 }
 
 .conteudo:hover {
-    border-bottom: 4px solid rgb(52, 194, 219);
+    border-bottom: 4px solid #5275d6;
     box-shadow: 5px 5px 5px 0px rgb(139, 139, 137);
 }
 
@@ -261,43 +261,44 @@ nav.menu ul a:active {
 
 /* Gaya untuk judul FAQ dan teks penjelasan */
 .title {
-    text-align: center; /* Pusatkan teks secara horizontal */
-    font-size: 18px; /* Atur ukuran teks sesuai keinginan Anda */
-    color: white; /* Warna teks judul */
-    background-color: #1abf9f;
-
-.title span {
-    font-size: 5px; /* Ukuran teks untuk teks penjelasan */
-    background-color: rgb(165, 235, 221);
+    text-align: center;
+    font-size: 20px;
+    color: #fff; /* Ganti warna teks judul agar sesuai dengan latar belakang */
+    background-color: #5275d6;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
 }
-}
-
 
 /* Gaya untuk pertanyaan */
 .accordion-item a {
     font-weight: bold;
     color: #333;
     text-decoration: none;
+    transition: color 0.3s ease; /* Efek transisi warna saat hover */
 }
 
 /* Gaya untuk jawaban */
 .accordion-item .content p {
-    font-size: 14px;
-    color: #666;
+    font-size: 18px;
+    color: #555;
 }
 
 /* Latar belakang pertanyaan */
 .accordion-item {
     background-color: #f9f9f9;
-    padding: 10px;
+    font-size: 22px;
+    padding: 20px;
     border: 1px solid #ddd;
     margin-bottom: 10px;
-    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease; /* Efek transisi latar belakang */
 }
 
 /* Efek hover pada pertanyaan */
 .accordion-item a:hover {
-    color: #007bff; /* Ganti warna saat hover */
+    color: #007bff;
 }
 
 /* Latar belakang saat aktif (pertanyaan terbuka) */
@@ -307,7 +308,10 @@ nav.menu ul a:active {
 
 /* Ikona panah untuk menandai pertanyaan terbuka */
 .accordion-item.active a::after {
-    content: "▲";
+    content: "▼"; /* Ganti ikon panah saat aktif */
+    margin-left: 5px;
+    transition: transform 0.3s ease; /* Efek transisi rotasi panah */
+    transform: rotate(180deg);
 }
 
 /* Tampilan jawaban ketika terbuka */
@@ -348,8 +352,8 @@ nav.menu ul a:active {
     nav.menu ul a {
         padding: 15px;
         font-size: 16px;
-        border-top: 1px solid #1abf9f;
-        border-bottom: 1px solid #16a085;
+        border-top: 1px solid #5275d6;
+        border-bottom: 1px solid #5275d6;
     }
     
     .blog {
@@ -427,7 +431,7 @@ header .judul {
   }
   
   input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #0412aa;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -435,7 +439,7 @@ header .judul {
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: #4c45a0;
   }
   
   /* Style the container/contact section */
@@ -491,14 +495,33 @@ header .judul {
     padding: 20px;
     background-color: #f2f2f2;
     border-radius: 20px;
+    margin-top: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Centered Text in Container */
 .containersaran h2 {
     text-align: center;
-    color: #28ba6e;
+    font-size: 28px; /* Ukuran font yang lebih fleksibel */
+    color: #fff;
+    background-color: #5275d6;
+    padding: 20px; /* Berikan padding untuk tampilan yang lebih baik */
+    border-radius: 8px; /* Sudut melengkung untuk elemen judul */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan untuk meningkatkan kedalaman */
+    margin-bottom: 20px; /* Berikan margin bawah untuk memisahkan dengan elemen-elemen berikutnya */
+    letter-spacing: 1px; /* Berikan sedikit jarak antar huruf untuk penampilan yang lebih baik */
 }
+
+/* Efek hover untuk judul */
+.containersaran h2:hover {
+    background-color: #1a3a77; /* Ganti warna saat hover */
+}
+
+/* Transisi efek hover */
+.containersaran h2 {
+    transition: background-color 0.3s;
+}
+
 
 /* Style Form */
 .saran form {
@@ -510,7 +533,7 @@ header .judul {
 }
 
 .saran label {
-    margin-top: 10px;
+    margin-top: 0px;
     color: #555;
 }
 
@@ -527,7 +550,7 @@ header .judul {
 }
 
 .saran input[type="submit"] {
-    background-color: #4caf50;
+    background-color: #5275d6;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -537,7 +560,7 @@ header .judul {
 }
 
 .saran input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #222c9c;
 }
 
 /* Style Image */
@@ -551,14 +574,16 @@ header .judul {
     transform: scale(1.2);
 }
 
+
 /* Style Row */
-.rowsaran {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    height: 300px
+.under.column {
+    text-align: center; /* Jika diperlukan, mengatur teks menjadi pusat dalam kontainer */
 }
+
+.rowsaran img {
+    margin-top: 20px;
+}
+
 
 .star-rating {
     display: inline-block;
@@ -606,7 +631,7 @@ header .judul {
 /* Style the search button */
 #searchForm button {
     padding: 10px 15px;
-    background-color: #3498db; /* Set a background color */
+    background-color: #5275d6; /* Set a background color */
     color: #fff; /* Set text color to white */
     border: none;
     border-radius: 5px;
@@ -617,4 +642,34 @@ header .judul {
 /* Change the button color on hover */
 #searchForm button:hover {
     background-color: #2980b9;
+}
+
+/* Gaya untuk tombol */
+.button {
+    background-color: #a1b4e8;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #1a3a77; /* Ganti warna saat hover */
+}
+
+/* Gaya untuk card */
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+    border-radius: 8px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
